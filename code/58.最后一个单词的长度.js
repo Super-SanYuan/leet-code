@@ -9,15 +9,19 @@
  * @param {string} s
  * @return {number}
  */
+// var lengthOfLastWord = function (s) {
+//   let arr = s.split(' ')
+//   let len = arr.length, i = 0, res = 0;
+//   for (; i < len; i++) {
+//     if (arr[i]) {
+//       res = arr[i].length
+//     }
+//   }
+//   return res
+// };
 var lengthOfLastWord = function (s) {
-  let arr = s.split(' ')
-  let len = arr.length, i = 0, res = 0;
-  for (; i < len; i++) {
-    if (arr[i]) {
-      res = arr[i].length
-    }
-  }
-  return res
+  let arr = s.trim().split(' ')
+  return arr ? arr[arr.length - 1].length : 0
 };
 // @lc code=end
 
